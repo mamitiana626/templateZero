@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=*, initial-scale=1.0">
+    <title>TP Site Web</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">  
+    <link rel="stylesheet" href="assets/css/circle.css">
+    <style type="text/css">
+      .couleurFondTitre{
+        background-color:#7E6000;
+      } 
+      body{
+        background-color: #5b4a02;  
+      }
+      .animationMenu:hover{
+        transform: rotate(7deg);
+      }
+
+      /*suppression de la couleur du lien*/
+      a{
+        text-decoration: none;/*Pour que le lien ne soit plus "souligné"...*/
+        color: white; /*ça reste un exemple*/
+    }
+    a:hover{
+      color: white !important;
+    }
+
+
+
+          /********* Superposition simple de texte sur une image *******/
+    /* Conteneur principal */
+    .overlay-image {
+     position: relative;
+     width: 100%;
+    }
+    /* Image originale */
+    .overlay-image .image {
+     display: block;
+     width: 100%;
+     height: auto;
+    }
+    /* Texte original */
+    .overlay-image .text {
+     color: #fff;
+     font-size: 30px;
+     line-height: 1.5em;
+     text-shadow: 2px 2px 2px #000;
+     text-align: center;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     width: 100%;
+    }
+        /********* Hover image et texte *******/
+    /* Overlay */
+    .overlay-image .hover {
+     position: absolute;
+     top: 0;
+     height: 100%;
+     width: 100%;
+     opacity: 0;
+     transition: .5s ease;
+    }
+    /* Apparition overlay sur passage souris */
+    .overlay-image:hover .hover {
+     opacity: 1;
+    }
+
+    /********* Hover background et texte uniquement *******/
+    .overlay-image .normal {
+     transition: .5s ease;
+    }
+    .overlay-image:hover .normal {
+     opacity: 0;
+    }
+    .overlay-image .hover {
+     background-color: rgba(0,0,0,0.5);
+    }
+    </style>  
+</head>
+<body>
+  <div class="container p-5 text-center couleurFondTitre">
+    Bartholomew
+  </div> 
+  <div class="container-fluid my-3 py-3 couleurFondTitre">
+    <nav class="nav nav-justified">
+      <a class="nav-item nav-link animationMenu" href="index.html">Home</a>
+      <a class="nav-item nav-link animationMenu" href="about.html">ABOUT</a>
+      <a class="nav-item nav-link animationMenu" href="page1.html">PAGE1</a>
+      <a class="nav-item nav-link animationMenu" href="page2.html">PAGE2</a>
+      <a class="nav-item nav-link animationMenu" href="page3.html">PAGE3</a>
+      <a class="nav-item nav-link animationMenu" href="page4.html">PAGE4</a>
+      <a class="nav-item nav-link animationMenu" href="">CONTACT</a>
+    </nav>
+  </div>  
+	<div class="container bg-light ">
+		<marquee><div class="col-12 text-center h3 pt-2">|| Hello Word! How are you Doing ! || </div></marquee>
+		<div class="row">
+			<div id="cf6_image" class="col-4"><img id="cf6_image" src="assets/images/arbre.jpg" class="img-fluid"></div>
+			<div id="cf6_image" class="col-4"><img id="cf6_image"src="assets/images/arbre.jpg" class="img-fluid"></div>
+			<div id="cf6_image"class="col-4"><img id="cf6_image"src="assets/images/arbre.jpg" class="img-fluid"></div>
+		</div>
+		<hr>
+		<div class="col-12 p-1">
+			<p class="h3"> - I love candy canes lollipop</p>
+			<p class="">I love candy canes lollipop cotton candy I love. Cake apple pie halvah sweet cheesecake I love. Toffee lollipop gummies I love. Pie carrot cake dragée icing pudding sugar plum. I love cake soufflé lollipop I love sweet sweet roll liquorice. Chocolate bar I love cookie. Marzipan cheesecake sugar plum pie sesame snaps fruitcake marzipan oat cake dessert. Toffee gummi bears apple pie carrot cake bonbon carrot cake. Donut croissant lemon drops liquorice. Dragée candy canes tiramisu oat cake powder ice cream I love. Halvah halvah danish cake cotton candy lemon drops cupcake pudding bear claw. I love biscuit I love candy. Caramels fruitcake topping soufflé.</p>
+		</div>		
+	</div>    
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+</body>
+</html>

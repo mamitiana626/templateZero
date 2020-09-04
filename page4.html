@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=*, initial-scale=1.0">
+    <title>TP Site Web</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">  
+    <link rel="stylesheet" href="assets/css/circle.css">
+    <style type="text/css">
+      .couleurFondTitre{
+        background-color:#7E6000;
+      } 
+      body{
+        background-color: #5b4a02;  
+      }
+      .animationMenu:hover{
+        transform: rotate(7deg);
+      }
+
+      /*suppression de la couleur du lien*/
+      a{
+        text-decoration: none;/*Pour que le lien ne soit plus "souligné"...*/
+        color: white; /*ça reste un exemple*/
+    }
+    a:hover{
+      color: white !important;
+    }
+
+
+
+          /********* Superposition simple de texte sur une image *******/
+    /* Conteneur principal */
+    .overlay-image {
+     position: relative;
+     width: 100%;
+    }
+    /* Image originale */
+    .overlay-image .image {
+     display: block;
+     width: 100%;
+     height: auto;
+    }
+    /* Texte original */
+    .overlay-image .text {
+     color: #fff;
+     font-size: 30px;
+     line-height: 1.5em;
+     text-shadow: 2px 2px 2px #000;
+     text-align: center;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     width: 100%;
+    }
+        /********* Hover image et texte *******/
+    /* Overlay */
+    .overlay-image .hover {
+     position: absolute;
+     top: 0;
+     height: 100%;
+     width: 100%;
+     opacity: 0;
+     transition: .5s ease;
+    }
+    /* Apparition overlay sur passage souris */
+    .overlay-image:hover .hover {
+     opacity: 1;
+    }
+
+    /********* Hover background et texte uniquement *******/
+    .overlay-image .normal {
+     transition: .5s ease;
+    }
+    .overlay-image:hover .normal {
+     opacity: 0;
+    }
+    .overlay-image .hover {
+     background-color: rgba(0,0,0,0.5);
+    }
+    </style>  
+</head>
+<body>
+  <div class="container p-5 text-center couleurFondTitre">
+    626
+  </div> 
+  <div class="container-fluid my-3 py-3 couleurFondTitre">
+    <nav class="nav nav-justified">
+      <a class="nav-item nav-link animationMenu" href="index.html">Home</a>
+      <a class="nav-item nav-link animationMenu" href="about.html">ABOUT</a>
+      <a class="nav-item nav-link animationMenu" href="page1.html">PAGE1</a>
+      <a class="nav-item nav-link animationMenu" href="page2.html">PAGE2</a>
+      <a class="nav-item nav-link animationMenu" href="page3.html">PAGE3</a>
+      <a class="nav-item nav-link animationMenu" href="page4.html">PAGE4</a>
+      <a class="nav-item nav-link animationMenu" href="">CONTACT</a>
+    </nav>
+  </div>  
+	<div class="container bg-light ">
+
+		<div class="col-12 text-center h3 pt-2">Product list</div>
+		<div class="row justify-content-center">
+			<div class="col-md-4">
+                <div class="card shadow" style="width: 13rem;">
+                    <div class="inner">
+                        <img src="assets/images/mask.jpg" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Product title</h5>
+                      <p class="card-text">Some quick example text.</p>
+                      <a href="#" class="btn btn-primary">Go to detail</a>
+                    </div>
+                  </div>
+                </div>
+			<div class="col-md-4">    
+             <div class="card shadow" style="width: 13rem;">
+                <div class="inner">
+                    <img src="assets/images/mask.jpg" class="card-img-top" alt="...">
+
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Product title</h5>
+                  <p class="card-text">Some quick example text.</p>
+                  <a href="#" class="btn btn-primary">Go to detail</a>
+                </div>
+              </div>
+      </div>
+     
+      <div class="col-md-4">    
+        <div class="card shadow" style="width: 13rem;">
+           <div class="inner">
+               <img src="assets/images/mask.jpg" class="card-img-top" alt="...">
+
+           </div>
+           <div class="card-body text-center">
+             <h5 class="card-title">Product title</h5>
+             <p class="card-text">Some quick example text.</p>
+             <a href="#" class="btn btn-primary">Go to detail</a>
+           </div>
+         </div>
+ </div>
+
+  </div>
+<br>
+
+<div class="row justify-content-center">
+  <div class="col-md-4">
+    <!-- ...product card col-md-4...-->  
+            <div class="card shadow" style="width: 13rem;">
+                <div class="inner">
+                    <img src="assets/images/mask.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Product title</h5>
+                  <p class="card-text">Some quick example text.</p>
+                  <a href="#" class="btn btn-primary">Go to detail</a>
+                </div>
+              </div>
+            </div>
+    <!-- ...product card col-md-4...-->
+  <div class="col-md-4">    
+         <div class="card shadow" style="width: 13rem;">
+            <div class="inner">
+                <img src="assets/images/mask.jpg" class="card-img-top" alt="...">
+
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Product title</h5>
+              <p class="card-text">Some quick example text.</p>
+              <a href="#" class="btn btn-primary">Go to detail</a>
+            </div>
+          </div>
+  </div>
+   <!-- ...product card col-md-4...-->
+  <div class="col-md-4">    
+    <div class="card shadow" style="width: 13rem;">
+       <div class="inner">
+           <img src="assets/images/mask.jpg" class="card-img-top" alt="...">
+
+       </div>
+       <div class="card-body text-center">
+         <h5 class="card-title">Product title</h5>
+         <p class="card-text">Some quick example text.</p>
+         <a href="#" class="btn btn-primary">Go to detail</a>
+       </div>
+     </div>
+</div>
+
+</div>	
+	</div>   
+  <div class="container p-5 mt-3 text-center couleurFondTitre">
+         &copy groupe 4 sayna "promotion sensei"
+    </div>  
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    
+</body>
+</html>
